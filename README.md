@@ -12,5 +12,12 @@ Advent of Code 2023 solutions with a different programming language each day, ea
 
 0.02s user 0.01s system 0.022 total
 
+## Day 2: B is for Bash
 
+``` 
+ >  ./part1.sh input.txt
+ >  ./part2.sh input.txt
+```
 
+0.05s user 0.07s system  0.128 total
+0.05s user 0.08s system 0.142 total

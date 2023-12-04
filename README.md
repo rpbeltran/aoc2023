@@ -31,3 +31,14 @@ Advent of Code 2023 solutions with a different programming language each day, ea
  >  time ./part2 input.txt
  0.01s user 0.00s system 0.013 total
 ```
+
+## Day 4: D is for D
+
+``` 
+ >  dmd part1.d common.d
+ >  dmd part2.d common.d
+ >  time ./part1
+ 0.01s user 0.00s system 0.024 total
+ >  time ./part2
+ 0.02s user 0.00s system 0.025 total
+```

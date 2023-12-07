@@ -68,8 +68,19 @@ The decision was between Elm, Erlang and Elixir since "ECMAScript" felt like a c
 I thought Elixir seemed like the faster learn and the one I would be most pick up again later.
 It felt like a wordier Haskell.
 Probably easier to use but maybe a bit less fun.
-I wouldn't mind exploring it further since I definitely didn't spend a lot of time going deep into
-for this one.
+I wouldn't mind exploring it further since I definitely didn't get in too deep for this.
 
 
+## Day 6: F is for F#
 
+```
+> dotnet fsi part1.fsx
+0.73s user 0.22s system 0.742 total
+> dotnet fsi part2.fsx
+0.70s user 0.18s system 0.702 total
+```
+
+F# was a lot like elixir but for some reason the syntax was just not as much fun.
+Then again.. I learned the minimum syntax necessary so what's' my opinions even worth.
+It was an easy AOC problem (I took the math approach) so not much algorithms to do here.
+For a larger project, access to the .NET ecosystem could have been convenient, but for AOC I think it was just meh.

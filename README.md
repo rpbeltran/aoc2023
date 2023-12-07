@@ -12,7 +12,7 @@ Advent of Code 2023 solutions with a different programming language each day, ea
  0.02s user 0.01s system 0.022 total
 ```
 
-Prior to Day 1 I hadn't used Awk beyond copy-paste-modify from the internet.
+I hadn't really used Awk before beyond copy-paste-modify from the internet.
 It's a simple language designed for parsing data which made it a good fit for early AOC problems.
 I'll probably start reaching for it more frequently after this.
 
@@ -84,3 +84,18 @@ F# was a lot like elixir but for some reason the syntax was just not as much fun
 Then again.. I learned the minimum syntax necessary so what's' my opinions even worth.
 It was an easy AOC problem (I took the math approach) so not much algorithms to do here.
 For a larger project, access to the .NET ecosystem could have been convenient, but for AOC I think it was just meh.
+
+
+## Day 7: G is for Golang
+
+```
+> go build part1.go
+> go build part2.go
+> time ./part1
+0.01s user 0.01s system 0.018 total
+> time ./part2
+0.01s user 0.01s system 0.019 total
+```
+
+The first language since Day 3 that I actually use frequently.
+Golang just works and is makes life really easy, but also it's kinda boring.

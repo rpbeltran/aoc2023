@@ -65,7 +65,7 @@ Very succinct and easy to use with a fun syntax.
 ```
 
 The decision was between Elm, Erlang and Elixir since "ECMAScript" felt like a cheat.
-I thought Elixir seemed like the faster learn and the one I would be most pick up again later.
+I thought Elixir seemed like the faster learn and the one I would be most likely to use again later.
 It felt like a wordier Haskell.
 Probably easier to use but maybe a bit less fun.
 I wouldn't mind exploring it further since I definitely didn't get in too deep for this.
@@ -99,3 +99,17 @@ For a larger project, access to the .NET ecosystem could have been convenient, b
 
 The first language since Day 3 that I actually use frequently.
 Golang just works and is makes life really easy, but also it's kinda boring.
+
+
+## Day 8: H is for Haskell
+
+```
+> ghc part1.hs
+> ghc part2.hs
+> time ./part1
+0.03s user 0.01s system 0.249 total
+> time ./part2
+0.14s user 0.01s system 0.292 total
+```
+
+It's been a while since I've used Haskell but I think it's more enjoyable than any of the functional languages I've had to use in this challenge so far.

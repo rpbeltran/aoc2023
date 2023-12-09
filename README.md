@@ -1,6 +1,12 @@
 # (Alphabetical) Advent of Code 2023
 
-Advent of Code 2023 solutions with a different programming language each day, each beginning with the associated letter of the alphabet. Most of these languages I was unfamiliar with before starting and so I won't vouch for having used any of them correctly.
+Advent of Code 2023 solutions with a different programming language each day, each beginning with
+the associated letter of the alphabet.
+Most of these languages I was unfamiliar with before starting and so I won't vouch for having used
+any of them correctly.
+Also, approximately zero effort or care went into making the solutions readable, terse, etc.
+The main purpose of this was just to force myself to problem solve outside of my comfort zone and
+"practice learning".
 
 
 ## Day 1: A is for Awk
@@ -112,4 +118,23 @@ Golang just works and is makes life really easy, but also it's kinda boring.
 0.14s user 0.01s system 0.292 total
 ```
 
-It's been a while since I've used Haskell but I think it's more enjoyable than any of the functional languages I've had to use in this challenge so far.
+It's been a while since I've used Haskell but I think it's more enjoyable than any of the functional
+languages I've had to use in this challenge so far.
+
+
+## Day 9: I is for Idris
+
+```
+> idris2 part1.idr -o part1
+> idris2 part2.idr -o part2
+> time ./part1
+0.03s user 0.01s system 0.045 total
+> time ./part2
+0.03s user 0.01s system 0.048 total
+```
+
+Idris was like Haskell, if Haskell had terrible documentation and beyond useless error messages.
+Honestly hard to see why I would ever want to use this right now, but to be fair, idris is not yet
+at version 1.0, and I wasn't using any of it's main selling points (therorem proofs and
+verification), which actually do sound pretty cool. I ended up looking for functions I needed in the
+sourcecode of their standard library because I couldn't figure out the docs.

@@ -138,3 +138,23 @@ Honestly hard to see why I would ever want to use this right now, but to be fair
 at version 1.0, and I wasn't using any of it's main selling points (therorem proofs and
 verification), which actually do sound pretty cool. I ended up looking for functions I needed in the
 sourcecode of their standard library because I couldn't figure out the docs.
+
+## Day 10: J is for Julia
+
+```
+> time julia part1.jl
+0.67s user 1.42s system 0.375 total
+> time julia part2.jl
+1.35s user 1.23s system 0.707 total
+```
+
+Possibly the first somewhat annoying problem of the year, and a very busy day makes for ugly code in
+a new language. I learned basically the minimum amount necessary and wrote some really messy code in
+the global namespace. This makes for a poor sample to judge Julia off of but I'll say it felt like a
+clunkier Python syntax without classes and with a little bit more typing (but still dynamically
+typed). I ran into some errors at first because I didn't realize Julia was 1 indexed. Docs, Stack
+Overflow and error messages were all much more usable than yesterday's Idris. The tooling is nice
+but as a nitpick I prefer it when languages install themselves onto a place that's already on my
+path instead of inside my applications directory like Juilia chose to. At this point I'm pretty much
+just owning that the code in this repository will be awful and embaressing unless I take some time
+later to clean it up.

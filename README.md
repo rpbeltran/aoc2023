@@ -158,3 +158,17 @@ but as a nitpick I prefer it when languages install themselves onto a place that
 path instead of inside my applications directory like Juilia chose to. At this point I'm pretty much
 just owning that the code in this repository will be awful and embaressing unless I take some time
 later to clean it up.
+
+
+## Day 11: K is for Kotlin
+
+```
+> time ./both_parts.main.kts 
+13.91s user 1.77s system 8.673 total
+```
+
+I'd used Kotlin once prior to this, during an interview so this was my second time scrambing to pick up an inkling of its syntax.
+Luckily, then as now, Kotlin is about as natural as languages come, and if weren't for my general preference to not be tied to things like the JVM (or .NET) I would have almost certainly pursued the language further.
+I like Kotlin a lot for how little I know about it.
+The syntax is almost perfect, though in my opinion too many parenthesis are required at times.
+If you don't mind working with the JVM, Kotlin seems pretty hard to complain about.

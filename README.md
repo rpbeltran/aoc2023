@@ -163,12 +163,29 @@ later to clean it up.
 ## Day 11: K is for Kotlin
 
 ```
-> time ./both_parts.main.kts 
+> time > ./both_parts.main.kts 
 13.91s user 1.77s system 8.673 total
 ```
 
-I'd used Kotlin once prior to this, during an interview so this was my second time scrambing to pick up an inkling of its syntax.
-Luckily, then as now, Kotlin is about as natural as languages come, and if weren't for my general preference to not be tied to things like the JVM (or .NET) I would have almost certainly pursued the language further.
+I'd used Kotlin once prior to this during an interview, so this was my second time scrambing to pick up an inkling of its syntax.
+Luckily, then as now, Kotlin is about as natural as languages come, and if it weren't for my general preference to not be tied to things like the JVM (as with .NET) I would have almost certainly pursued the language further.
 I like Kotlin a lot for how little I know about it.
 The syntax is almost perfect, though in my opinion too many parenthesis are required at times.
 If you don't mind working with the JVM, Kotlin seems pretty hard to complain about.
+
+
+## Day 12: L is for 
+
+```
+> ./both_parts.main.kts 
+#TODO: fill in timing data
+```
+
+Lua is deceptively simple for how difficult it was to actually use. I had zero concerns going into
+Lua but I should have had a couple. 1-indexing, undefined variables defaulting to nil, variables in
+functions overwriting versions of themselves in other scopes unless local is set, and other quirks
+that reminded me more of Bash than of any sane language all lead to some very annoying times
+debugging. A lack of builtins for things like collecting generators to lists, adding lists, shallow
+copying, etc. lead to long and boring code as well. Obviously Lua is a simple language and it would
+have been harder to solve today's DP algorithm in a language like Lisp (my other L option), but for
+a language I used to think of as "Python but easier to embed" I found it to be pretty annoying. 

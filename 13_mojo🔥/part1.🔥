@@ -1,0 +1,41 @@
+
+def min(i:Int, j:Int):
+    if i < j:
+        return i
+    return j
+
+
+def solve_helper(lines: DynamicVector[String]) -> Int:
+    for i in range(len(lines) - 1):
+        passed = True
+        for j in range(min(len(lines)-i-1, i+1)):
+            if lines[i-j] != lines[i+1+j]:
+                passed = False
+        if passed:
+            return i+1
+    return 0
+
+
+def solve(problem: String) -> Int:
+    let lines = problem.split("\n")
+    let horizontal_solution = solve_helper(lines)
+
+    let width = len(lines[0])
+    var cols = DynamicVector[String](width)
+    for i in range(width):
+        var s: String = " "
+        for j in range(len(lines)):
+            s = s + lines[j][i]
+        cols.append(s)
+
+    let vertical_solution = solve_helper(cols)
+
+    return 100*horizontal_solution + vertical_solution
+
+
+def main():
+    problems = open("input.txt", "r").read().split("\n\n")
+    total = 0
+    for i in range(len(problems)):
+        total += solve(problems[i])
+    print( "Total:", total)

@@ -174,11 +174,11 @@ The syntax is almost perfect, though in my opinion too many parenthesis are requ
 If you don't mind working with the JVM, Kotlin seems pretty hard to complain about.
 
 
-## Day 12: L is for 
+## Day 12: L is for Lua
 
 ```
 > ./both_parts.main.kts 
-#TODO: fill in timing data
+30580.85s user 49.30s system 17:51:08.89 total
 ```
 
 Lua is deceptively simple for how difficult it was to actually use. I had zero concerns going into
@@ -188,4 +188,30 @@ that reminded me more of Bash than of any sane language all lead to some very an
 debugging. A lack of builtins for things like collecting generators to lists, adding lists, shallow
 copying, etc. lead to long and boring code as well. Obviously Lua is a simple language and it would
 have been harder to solve today's DP algorithm in a language like Lisp (my other L option), but for
-a language I used to think of as "Python but easier to embed" I found it to be pretty annoying. 
+a language I used to think of as "Python but easier to embed" I found it to be pretty annoying. I
+may fix my solution later because part 2 runs slow (like, 18 hours slow...) so either my DP
+algorithm isn't as good as I thought it was or my constants are just terrible. Either way my
+constants are definitely terrible.
+
+
+## Day 12: M is for Mojo 🔥
+
+```
+> time mojo part1.🔥 
+0.10s user 0.01s system 0.107 total
+> time mojo part2.🔥
+0.53s user 0.15s system 0.377 total
+```
+
+It's impressive that Mojo 🔥 is as usable as it is given how early in development it is. I have
+wanted to check it out since I saw Chris Lattner present it at the keynote of an LLVM Conference.
+This is still a very early stage work-in-progress implementation of the language, but it had enough 
+implemented to solve today's problem. The experience was a bit frustrating, but not because of any
+poor design decisions or anything else I can really be upset with, it's just that a lot is missing
+still. Most builtins I reached for did not exist. Adding lists? Nope! Hashmaps? I don't think so.
+Directly iterating over collections? Not possible yet. But most of these errors had names like
+"TODO: xyz does not exist yet". So these features are coming everntually they just aren't here yet.
+Documentation was a bit difficult, and don't expect a community of stack overflow anwers to lean in
+on, but I'm sure those things will come later. Was using it frustrating? Yes. Do I blame anyone for
+that? No. Check back next year (or maybe the year after that) and it will probably be a much
+smoother choice than it is today.

@@ -1,0 +1,50 @@
+
+def min(i:Int, j:Int):
+    if i < j:
+        return i
+    return j
+
+
+def off_by(lines: DynamicVector[String], split_at: Int, max: Int) -> Int:
+    total = 0
+    for i in range(min(len(lines)-split_at-1, split_at+1)):
+        a = lines[split_at-i]
+        b = lines[split_at+1+i]
+        for c in range(len(a)):
+            if a[c] != b[c]:
+                total += 1
+                if total > max:
+                    return total
+    return total
+
+
+def solve_helper(lines: DynamicVector[String]) -> Int:
+    for i in range(len(lines) - 1):
+        if off_by(lines, i, 2) == 1:
+            return i+1
+    return 0
+
+
+def solve(problem: String) -> Int:
+    let lines = problem.split("\n")
+    let horizontal_solution = solve_helper(lines)
+
+    let width = len(lines[0])
+    var cols = DynamicVector[String](width)
+    for i in range(width):
+        var s: String = " "
+        for j in range(len(lines)):
+            s = s + lines[j][i]
+        cols.append(s)
+
+    let vertical_solution = solve_helper(cols)
+
+    return 100*horizontal_solution + vertical_solution
+
+
+def main():
+    problems = open("input.txt", "r").read().split("\n\n")
+    total = 0
+    for i in range(len(problems)):
+        total += solve(problems[i])
+    print("Total:", total)

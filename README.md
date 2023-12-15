@@ -215,3 +215,39 @@ Documentation was a bit difficult, and don't expect a community of stack overflo
 on, but I'm sure those things will come later. Was using it frustrating? Yes. Do I blame anyone for
 that? No. Check back next year (or maybe the year after that) and it will probably be a much
 smoother choice than it is today.
+
+
+## Day 12: N is for Nushell
+
+```
+> nu both_parts.nu
+6801.13s user 563.68s system 3:38:19.33 total
+```
+
+I've played with nushell in the past in terminall, but never really taken the time to learn it or to
+write actual scripts in it. I have a lot of oppinions on shell languages since I've been designing
+one of my own (maybe next year it will be AOC ready, but currently it's not). Shell languages should
+serve two goals:
+
+1) maximize productivity in terminal via terse and obvious syntax
+2) Be generally maintainable when used as a scripting language
+
+Bash fails on both accounts, actually. How many people recall all the syntax for even basic things
+well enough to avoid going to Stack Overflow every time they want to send standard error to one file
+and stdout to another? And who wants to maintain a large and growing shell script and trust's that
+they won't make mistakes. Nushell improves on both aspects of this I believe but I don't think it's
+perfect either (hence I think there's room for yet another).
+
+Nushell's syntax is relatively aesthetic, though fould benefit from better for loops and from better
+parsing rules for assignment, we currently need parenthesis around the RHS for pipelines or else
+we get weird errors. Errors in general actually are probably the low point of the language right now
+(which to be fair is not yet at version 1.0). If you misspell a variable name on one line (or forget
+the `$`) you are likely to get an error on a completely different line that seems rather unrelated
+so often you know that you did something wrong but aren't quite suire what it was.
+
+Immutability and functional programming is dominant in Nushell. Mutable variables are allowed, but
+most builtins are not designed to modify in place and mutable variables cannot be borrowed inside
+`each` loops so imperative programming in nushell is ugly. This is an interesting choice for a shell
+language, but I think this lead to some slower performance on today's algorithm, and I doubt it's as
+optimized as Haskell which avoids cloning most structures even when it would appear to be doing just
+that.

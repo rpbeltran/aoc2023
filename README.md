@@ -270,3 +270,16 @@ severe however once I figured out a little bit of the language basics and found 
 of Core](https://ocaml.janestreet.com/ocaml-core/109.55.00/tmp/core_kernel) which was very useful
 and made figuring things out from there pretty easy. Occaml is like Haskell with side effects which
 made for a relatively easy learning curve.
+
+
+## Day 16: P is for Python
+
+```
+>  time python3 both_parts.py
+2.00s user 0.03s system 2.029 total
+>  time python3 opttimized.py
+1.60s user 0.01s system 1.612 total
+```
+
+Maybe Python was a lame choice and I should have picked a harder language but honestly didn't mind
+the relaxed day, especially ahead of Q. It's nice feeling comfortable again.

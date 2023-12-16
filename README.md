@@ -194,7 +194,7 @@ algorithm isn't as good as I thought it was or my constants are just terrible. E
 constants are definitely terrible.
 
 
-## Day 12: M is for Mojo 🔥
+## Day 13: M is for Mojo 🔥
 
 ```
 > time mojo part1.🔥 
@@ -217,7 +217,7 @@ that? No. Check back next year (or maybe the year after that) and it will probab
 smoother choice than it is today.
 
 
-## Day 12: N is for Nushell
+## Day 14: N is for Nushell
 
 ```
 > nu both_parts.nu
@@ -251,3 +251,22 @@ most builtins are not designed to modify in place and mutable variables cannot b
 language, but I think this lead to some slower performance on today's algorithm, and I doubt it's as
 optimized as Haskell which avoids cloning most structures even when it would appear to be doing just
 that.
+
+
+## Day 15: O is for Ocaml
+
+```
+> time utop part1.ml
+0.34s user 0.03s system 0.371 total
+> time utop part2.ml
+0.38s user 0.03s system 0.411 total
+```
+
+First time using Ocaml was confusing at first because there seem to be several commonly used
+standard libraries. I was using the Core Standard Library from Jane Street. I picked it because a
+Google Search made that seem like the thing to do, but it seems to have broken compatibility between
+my code and most of the Ocaml on Stack Overflow. The annpyance from this got significantly less
+severe however once I figured out a little bit of the language basics and found the [documentation
+of Core](https://ocaml.janestreet.com/ocaml-core/109.55.00/tmp/core_kernel) which was very useful
+and made figuring things out from there pretty easy. Occaml is like Haskell with side effects which
+made for a relatively easy learning curve.

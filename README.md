@@ -281,5 +281,41 @@ made for a relatively easy learning curve.
 1.60s user 0.01s system 1.612 total
 ```
 
-Maybe Python was a lame choice and I should have picked a harder language but honestly didn't mind
-the relaxed day, especially ahead of Q. It's nice feeling comfortable again.
+Maybe Python was a lame choice and I should have picked a harder language but honestly I didn't mind
+the relaxed day, especially ahead of Q. It's nice feeling comfortable again. I also added an
+optimized version by avoiding any hashing calls.
+
+
+## Day 17: Q is for QBasic
+
+```
+>  qb64 -x part1.bas -o $(pwd)/part1
+>  qb64 -x part2.bas -o $(pwd)/part2
+> time ./part1
+13.39s user 0.48s system 13.796 total
+> time ./part2
+41.78s user 1.26s system 41.397 total
+```
+
+Terrible fun. QBasic is pretty basic so I had to build a lot from scratch. (Q)Basically you get
+arrays, and that's it. When you run the code it doesn't just print to the terminal like a normy but
+instead pulls up the retro GUI that looks like an old DOS terminal and then crashes mysteriously.
+Debugging is pretty terrible without stack traces and I couldn't figure out
+how to see more than about the last 20 lines of output at once on the little GUI so it's hard to get
+it to show you its steps.
+
+I implemented priority queues using fixed sized arrays. I had about 200 lines of code
+before I even started working on Dijikstra's. This took me longer than the other days so far and
+now I'm a day behind. I
+think being a programmer back in the day when Basic was modern kinda sounds like fun.
+More fun then any modern imperative programming language at least, but not as much fun as Prolog.
+It made me wish that libraries and standard libraries didn't exist and that I had to instead build
+out my own collection of little algorithms. Talk to you friend like "You got a min_heap I can use?"
+and be told "Yeah, I'll get you a floppy with that". That would have been great.
+When I realized I was 80% done with this one I was only as far as a python programmer would have
+been after typing `import heapq`. Glad to be done with a letter I was dreading. 
+
+Meta Note: I might go rogue tomorrow and do day 19 before day 18 so that I can do day 18 on a plane.
+This challenge tends to require a lot of spam googling things like "how to split a string in ..."
+which is hard to do while flying but hopefully I should be able write Rust without much docs hence
+I'm holding onto the letter R.

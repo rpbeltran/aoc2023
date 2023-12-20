@@ -2,3 +2,6 @@
 */input.txt
 */example.txt
 14_nushell/*table.txt
+19_scala/*.class
+19_scala/*.tasty
+19_scala/generated*

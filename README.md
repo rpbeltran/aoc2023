@@ -319,3 +319,16 @@ Meta Note: I might go rogue tomorrow and do day 19 before day 18 so that I can d
 This challenge tends to require a lot of spam googling things like "how to split a string in ..."
 which is hard to do while flying but hopefully I should be able write Rust without much docs hence
 I'm holding onto the letter R.
+
+
+## Day 19: S is for Scala
+
+I went with Scala instead of Swift at the last minute.
+I took a weird route here and decided to write a Scala program to generate a scala program from the
+imput and then run that program to get the answer. This approach was not a particuarly helpful start
+for day 2. Oh well. I didn't have time to do them on the same day but I'll return to this one soon.
+
+```
+> scalac part1.scala && scala Part1    
+> scalac generated_1.scala && scala generated_1
+```

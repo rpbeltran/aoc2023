@@ -2,6 +2,8 @@
 */input.txt
 */example.txt
 14_nushell/*table.txt
+18_rust/target/*
+18_rust/Cargo.lock
 19_scala/*.class
 19_scala/*.tasty
 19_scala/generated*

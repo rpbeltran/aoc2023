@@ -321,6 +321,17 @@ which is hard to do while flying but hopefully I should be able write Rust witho
 I'm holding onto the letter R.
 
 
+## Day 18: R is for Rust
+
+Rust is good. Time is low.
+
+```
+> cargo build
+> time ./target/release/both_parts  
+0.01s user 0.00s system 0.174 total
+```
+
+
 ## Day 19: S is for Scala
 
 I went with Scala instead of Swift at the last minute.

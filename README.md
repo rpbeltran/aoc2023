@@ -343,3 +343,14 @@ for day 2. Oh well. I didn't have time to do them on the same day but I'll retur
 > scalac part1.scala && scala Part1    
 > scalac generated_1.scala && scala generated_1
 ```
+
+## Day 20: T is for Typescript
+
+Typescript is well designed as a major improvement over Javascript. 
+Part 1 was trivial today, part 2 I initially solved manually by visualizing the input in graphviz,
+then coded the solution with a better understanding of what goes on.
+
+```
+> time npx ts-node both_part.ts
+1.44s user 0.16s system 1.238 total
+```
